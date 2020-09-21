@@ -28,4 +28,4 @@ RUN mkdir $KAFKA_CONNECT_ES_DIR && cd $KAFKA_CONNECT_ES_DIR &&\
         curl -sO https://repo.maven.apache.org/maven2/io/searchbox/jest-common/2.0.0/jest-common-2.0.0.jar && \
         curl -sO https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.4/gson-2.4.jar
 
-COPY log4j.properties /kafka/config/log4j.properties
+COPY log4j.properties /kafka/config/log4j1.properties
