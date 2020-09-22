@@ -56,4 +56,4 @@ services:
       - OFFSET_STORAGE_TOPIC=my_connect_offsets
     volumes:
       - ./debezium-jdbc-es/config:/kafka/config
-      - ./debezium-jdbc-es/logs:/kafka/logs
+      - ./debezium-jdbc-es/logs/connect-service.log:/kafka/logs/connect-service.log
