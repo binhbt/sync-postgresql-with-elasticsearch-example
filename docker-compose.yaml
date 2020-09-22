@@ -54,6 +54,6 @@ services:
       - GROUP_ID=1
       - CONFIG_STORAGE_TOPIC=my_connect_configs
       - OFFSET_STORAGE_TOPIC=my_connect_offsets
-    volumes:
-      - ./debezium-jdbc-es/config:/kafka/config
-      - ./debezium-jdbc-es/logs:/kafka/logs
+    # volumes:
+    #   - ./debezium-jdbc-es/config:/kafka/config
+    #   - ./debezium-jdbc-es/logs:/kafka/logs
