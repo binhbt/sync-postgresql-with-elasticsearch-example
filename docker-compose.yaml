@@ -18,7 +18,8 @@ services:
     environment:
       - ZOOKEEPER_CONNECT=zookeeper:2181
     volumes:
-        - ./kafka_logs:/kafka/logs
+      - ./kafka_config:/kafka/config
+      - ./kafka_logs:/kafka/logs
   postgres:
     build: ./postgres
     restart: always
@@ -56,5 +57,5 @@ services:
       - CONFIG_STORAGE_TOPIC=my_connect_configs
       - OFFSET_STORAGE_TOPIC=my_connect_offsets
     volumes:
-    #   - ./debezium-jdbc-es/config:/kafka/config
+      - ./debezium-jdbc-es/config:/kafka/config
       - ./debezium-jdbc-es/logs:/kafka/logs
