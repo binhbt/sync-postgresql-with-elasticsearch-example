@@ -18,7 +18,7 @@ services:
     environment:
       - ZOOKEEPER_CONNECT=zookeeper:2181
     volumes:
-        - ./debezium-jdbc-es/logs1:/kafka/logs
+        - ./kafka_logs:/kafka/logs
   postgres:
     build: ./postgres
     restart: always
